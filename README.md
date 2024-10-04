@@ -1,6 +1,6 @@
 # txt2xml
 
-`txt2xml` is a CLI tool designed to streamline the process of preparing text documents for large language model (LLM) prompts, particularly for models with extended context windows like Claude 3.
+`txt2xml` is a CLI tool designed to streamline the process of preparing text documents for large language model (LLM) prompts.
 
 ## Usage
 
