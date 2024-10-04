@@ -11,6 +11,11 @@ import Foundation
 @main
 struct TXT2XML: ParsableCommand {
     
+    enum Error: Swift.Error {
+        case inputNotFound
+        case fileEnumerationFailed
+    }
+    
     static let configuration = CommandConfiguration(
         commandName: "txt2xml",
         abstract: "A utility for converting text files to XML format.",
@@ -43,7 +48,7 @@ struct TXT2XML: ParsableCommand {
         var isDirectory: ObjCBool = false
         
         guard fileManager.fileExists(atPath: inputURL.path(), isDirectory: &isDirectory) else {
-            throw NSError()
+            throw Error.inputNotFound
         }
         
         if isDirectory.boolValue {
@@ -52,7 +57,7 @@ struct TXT2XML: ParsableCommand {
                 includingPropertiesForKeys: nil,
                 options: includeHidden ? [] : [.skipsHiddenFiles]
             ) else {
-                throw NSError()
+                throw Error.fileEnumerationFailed
             }
             
             let allowedFileExtension = types?.split(separator: ",").map { $0.trimmingCharacters(in: .whitespaces).lowercased() }
