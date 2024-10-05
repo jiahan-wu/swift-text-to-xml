@@ -22,29 +22,6 @@ OPTIONS:
   -h, --help              Show help information.
 ```
 
-## Examples
-
-```
-txt2xml /path/to/project --recursive --types swift
-```
-
-```
-<documents>
-  <document index="0">
-    <source>Model.swift</source>
-    <document_content>
-      {{Model}}
-    </document_content>
-  </document>
-  <document index="1">
-    <source>ViewController.swift</source>
-    <document_content>
-      {{ViewController}}
-    </document_content>
-  </document>
-</documents>
-```
-
 ## References
 
 * [Long context prompting tips](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/long-context-tips#example-multi-document-structure)
