@@ -1,11 +1,11 @@
-# txt2xml
+# text2xml
 
-`txt2xml` is a CLI tool designed to streamline the process of preparing text documents for large language model (LLM) prompts.
+`text2xml` is a CLI tool designed to streamline the process of preparing text documents for large language model (LLM) prompts, particularly for models with extended context windows like Claude 3.
 
 ## Usage
 
 ```
-txt2xml <input-path> [--types <types>] [--recursive] [--include-hidden] [--trim] [--output-path <output-path>]
+text2xml <input-path> [--types <types>] [--recursive] [--include-hidden] [--trim] [--output-path <output-path>]
 
 ARGUMENTS:
   <input-path>            The input file or directory path to convert to XML.
@@ -28,4 +28,4 @@ OPTIONS:
 
 ## License
 
-`swift-txt-to-xml` is released under the MIT License. See the `LICENSE` file for more information.
+`swift-text-to-xml` is released under the MIT License. See the `LICENSE` file for more information.

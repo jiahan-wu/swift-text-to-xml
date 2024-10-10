@@ -4,7 +4,7 @@
 import PackageDescription
 
 let package = Package(
-    name: "swift-txt-to-xml",
+    name: "swift-text-to-xml",
     platforms: [
         .macOS(.v13),
     ],
@@ -16,7 +16,7 @@ let package = Package(
     ],
     targets: [
         .executableTarget(
-            name: "txt2xml",
+            name: "text2xml",
             dependencies: [
                 .product(
                     name: "ArgumentParser",

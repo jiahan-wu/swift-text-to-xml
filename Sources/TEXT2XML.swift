@@ -1,6 +1,6 @@
 //
-//  TXT2XML.swift
-//  swift-txt-to-xml
+//  TEXT2XML.swift
+//  swift-text-to-xml
 //
 //  Created by Jia-Han Wu on 2024/10/03.
 //
@@ -9,7 +9,7 @@ import ArgumentParser
 import Foundation
 
 @main
-struct TXT2XML: ParsableCommand {
+struct TEXT2XML: ParsableCommand {
     
     enum Error: Swift.Error {
         case inputNotFound
@@ -17,7 +17,7 @@ struct TXT2XML: ParsableCommand {
     }
     
     static let configuration = CommandConfiguration(
-        commandName: "txt2xml",
+        commandName: "text2xml",
         abstract: "A utility for converting text files to XML format.",
         version: "0.0.1"
     )
